@@ -34,7 +34,6 @@ class SecondFragment : Fragment() {
 
         val min = arguments?.getInt(MIN_VALUE_KEY) ?: 0
         val max = arguments?.getInt(MAX_VALUE_KEY) ?: 0
-        Log.v("AppVerbose", "$min : $max")
 
         result?.text = generate(min, max).toString()
 
